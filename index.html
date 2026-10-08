@@ -22,7 +22,7 @@
   <style>
 
     /* =========================================
-       ROOT VARIABLES
+        ROOT VARIABLES
     ========================================= */
 
     :root {
@@ -52,7 +52,7 @@
 
 
     /* =========================================
-       RESET
+        RESET
     ========================================= */
 
     * {
@@ -96,7 +96,7 @@
 
 
     /* =========================================
-       NAVBAR
+        NAVBAR
     ========================================= */
 
     header {
@@ -191,7 +191,7 @@
 
 
     /* =========================================
-       HERO
+        HERO
     ========================================= */
 
     .hero {
@@ -368,7 +368,7 @@
 
 
     /* =========================================
-       GENERAL SECTIONS
+        GENERAL SECTIONS
     ========================================= */
 
     section {
@@ -414,7 +414,7 @@
 
 
     /* =========================================
-       STORY
+        STORY
     ========================================= */
 
     .intro {
@@ -486,7 +486,7 @@
 
 
     /* =========================================
-       FEATURES
+        FEATURES
     ========================================= */
 
     .features {
@@ -553,7 +553,7 @@
 
 
     /* =========================================
-       PRODUCTS
+        PRODUCTS
     ========================================= */
 
     .products {
@@ -563,7 +563,7 @@
     .product-grid {
       display: grid;
 
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
 
       gap: 20px;
     }
@@ -671,11 +671,17 @@
       padding: 9px 13px;
 
       cursor: pointer;
+
+      transition: background var(--transition);
+    }
+
+    .small-btn:hover {
+      background: var(--brown-700);
     }
 
 
     /* =========================================
-       FLAVORS
+        FLAVORS
     ========================================= */
 
     .flavors {
@@ -778,7 +784,7 @@
 
 
     /* =========================================
-       PROCESS
+        PROCESS
     ========================================= */
 
     .process {
@@ -852,7 +858,7 @@
 
 
     /* =========================================
-       GIFT SECTION
+        GIFT SECTION
     ========================================= */
 
     .gift {
@@ -886,7 +892,7 @@
 
 
     /* =========================================
-       CUSTOM
+        CUSTOM
     ========================================= */
 
     .custom {
@@ -929,7 +935,7 @@
 
 
     /* =========================================
-       TESTIMONIALS
+        TESTIMONIALS
     ========================================= */
 
     .testimonials {
@@ -984,7 +990,7 @@
 
 
     /* =========================================
-       LOCATION
+        LOCATION
     ========================================= */
 
     .location {
@@ -1101,7 +1107,7 @@
 
 
     /* =========================================
-       FAQ
+        FAQ
     ========================================= */
 
     .faq {
@@ -1158,7 +1164,7 @@
 
 
     /* =========================================
-       NEWSLETTER
+        NEWSLETTER
     ========================================= */
 
     .newsletter {
@@ -1221,7 +1227,7 @@
 
 
     /* =========================================
-       CONTACT
+        CONTACT
     ========================================= */
 
     .contact {
@@ -1327,7 +1333,7 @@
 
 
     /* =========================================
-       FOOTER
+        FOOTER
     ========================================= */
 
     footer {
@@ -1400,7 +1406,7 @@
 
 
     /* =========================================
-       TOAST
+        TOAST NOTIFICATION
     ========================================= */
 
     .toast {
@@ -1413,7 +1419,7 @@
 
       color: white;
 
-      padding: 15px 20px;
+      padding: 15px 22px;
 
       border-radius: 12px;
 
@@ -1423,9 +1429,13 @@
 
       opacity: 0;
 
-      transition: 0.4s ease;
+      transition: transform 0.4s ease, opacity 0.4s ease;
 
       z-index: 2000;
+
+      border: 1px solid var(--gold);
+
+      font-weight: 600;
     }
 
     .toast.show {
@@ -1436,7 +1446,7 @@
 
 
     /* =========================================
-       RESPONSIVE
+        RESPONSIVE
     ========================================= */
 
     @media (max-width: 950px) {
@@ -1565,10 +1575,9 @@
 
 <body>
 
-
   <!-- =========================================
-       NAVIGATION
-  ========================================== -->
+        NAVIGATION
+  ========================================= -->
 
   <header>
 
@@ -1621,8 +1630,8 @@
 
 
   <!-- =========================================
-       HERO
-  ========================================== -->
+        HERO
+  ========================================= -->
 
   <main>
 
@@ -1687,8 +1696,8 @@
 
 
     <!-- =========================================
-         STORY
-    ========================================== -->
+        STORY
+    ========================================= -->
 
     <section class="intro" id="story">
 
@@ -1764,8 +1773,8 @@
 
 
     <!-- =========================================
-         FEATURES
-    ========================================== -->
+        FEATURES
+    ========================================= -->
 
     <section class="features">
 
@@ -1907,8 +1916,8 @@
 
 
     <!-- =========================================
-         PRODUCTS
-    ========================================== -->
+        PRODUCTS
+    ========================================= -->
 
     <section class="products" id="chocolates">
 
@@ -1934,189 +1943,53 @@
 
         <div class="product-grid">
 
-
+          <!-- Product 1 -->
           <article class="product-card">
-
             <div class="product-image">
-
-              <img
-                src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=85"
-                alt="Dark chocolate truffles"
-              >
-
-              <span class="product-tag">
-                Best Seller
-              </span>
-
+              <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=85" alt="Dark chocolate truffles">
+              <span class="product-tag">Best Seller</span>
             </div>
-
-
             <div class="product-content">
-
-              <h3>
-                Dark Truffle Box
-              </h3>
-
-              <p>
-                Rich dark chocolate with silky ganache centers.
-              </p>
-
+              <h3>Dark Truffles</h3>
+              <p>Rich 72% single-origin dark cocoa ganache.</p>
               <div class="product-bottom">
-
-                <span class="price">
-                  ₹699
-                </span>
-
-                <button class="small-btn add-cart">
-                  Add +
-                </button>
-
+                <span class="price">₹450</span>
+                <button class="small-btn add-cart-btn" data-product="Dark Truffles">Add 🍫</button>
               </div>
-
             </div>
-
           </article>
 
-
-
+          <!-- Product 2 -->
           <article class="product-card">
-
             <div class="product-image">
-
-              <img
-                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85"
-                alt="Milk chocolate collection"
-              >
-
-              <span class="product-tag">
-                Classic
-              </span>
-
+              <img src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?auto=format&fit=crop&w=800&q=85" alt="Hazelnut Pralines">
+              <span class="product-tag">Gourmet</span>
             </div>
-
-
             <div class="product-content">
-
-              <h3>
-                Milk Chocolate Collection
-              </h3>
-
-              <p>
-                Smooth, creamy and wonderfully comforting.
-              </p>
-
+              <h3>Hazelnut Pralines</h3>
+              <p>Crunchy roasted hazelnuts in milk chocolate.</p>
               <div class="product-bottom">
-
-                <span class="price">
-                  ₹599
-                </span>
-
-                <button class="small-btn add-cart">
-                  Add +
-                </button>
-
+                <span class="price">₹520</span>
+                <button class="small-btn add-cart-btn" data-product="Hazelnut Pralines">Add 🍫</button>
               </div>
-
             </div>
-
           </article>
 
-
-
+          <!-- Product 3 -->
           <article class="product-card">
-
             <div class="product-image">
-
-              <img
-                src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=85"
-                alt="Hazelnut praline chocolate"
-              >
-
-              <span class="product-tag">
-                Gourmet
-              </span>
-
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85" alt="Sea Salt Caramel">
+              <span class="product-tag">Chef's Choice</span>
             </div>
-
-
             <div class="product-content">
-
-              <h3>
-                Hazelnut Praline
-              </h3>
-
-              <p>
-                Roasted hazelnuts with smooth chocolate praline.
-              </p>
-
+              <h3>Salted Caramel</h3>
+              <p>Buttery caramel with Himalayan pink salt.</p>
               <div class="product-bottom">
-
-                <span class="price">
-                  ₹749
-                </span>
-
-                <button class="small-btn add-cart">
-                  Add +
-                </button>
-
+                <span class="price">₹480</span>
+                <button class="small-btn add-cart-btn" data-product="Salted Caramel">Add 🍫</button>
               </div>
-
             </div>
-
           </article>
-
-
-
-          <article class="product-card">
-
-            <div class="product-image">
-
-              <img
-                src="https://images.unsplash.com/photo-1582176604856-e824b4736522?auto=format&fit=crop&w=800&q=85"
-                alt="Chocolate gift box"
-              >
-
-              <span class="product-tag">
-                Gift
-              </span>
-
-            </div>
-
-
-            <div class="product-content">
-
-              <h3>
-                Signature Gift Box
-              </h3>
-
-              <p>
-                A beautiful selection of our most-loved chocolates.
-              </p>
-
-              <div class="product-bottom">
-
-                <span class="price">
-                  ₹1,299
-                </span>
-
-                <button class="small-btn add-cart">
-                  Add +
-                </button>
-
-              </div>
-
-            </div>
-
-          </article>
-
-        </div>
-
-
-        <div style="text-align:center; margin-top:40px;">
-
-          <a href="#contact" class="btn btn-primary">
-            Explore Full Collection →
-          </a>
 
         </div>
 
@@ -2127,8 +2000,8 @@
 
 
     <!-- =========================================
-         FLAVORS
-    ========================================== -->
+        FLAVORS
+    ========================================= -->
 
     <section class="flavors" id="flavors">
 
@@ -2141,12 +2014,11 @@
           </div>
 
           <h2>
-            Where Chocolate Meets Imagination.
+            Crafted for True Connoisseurs.
           </h2>
 
           <p>
-            Classic foundations meet fruits, nuts,
-            spices and unexpected combinations.
+            Explore our artisanal variety of signature flavor infusions.
           </p>
 
         </div>
@@ -2154,112 +2026,47 @@
 
         <div class="flavor-grid">
 
-
-          <article class="flavor flavor-1">
-
+          <div class="flavor flavor-1">
             <div class="flavor-content">
-
-              <h3>
-                Raspberry
-              </h3>
-
-              <p>
-                Bright berry notes with rich dark chocolate.
-              </p>
-
+              <h3>Classic Dark</h3>
+              <p>Intense cocoa bliss</p>
             </div>
+          </div>
 
-          </article>
-
-
-
-          <article class="flavor flavor-2">
-
+          <div class="flavor flavor-2">
             <div class="flavor-content">
-
-              <h3>
-                Hazelnut
-              </h3>
-
-              <p>
-                Roasted, crunchy and wonderfully indulgent.
-              </p>
-
+              <h3>Roasted Almond</h3>
+              <p>Crunchy nut harmony</p>
             </div>
+          </div>
 
-          </article>
-
-
-
-          <article class="flavor flavor-3">
-
+          <div class="flavor flavor-3">
             <div class="flavor-content">
-
-              <h3>
-                Orange Zest
-              </h3>
-
-              <p>
-                Fresh citrus meets silky chocolate.
-              </p>
-
+              <h3>Sea Salt Caramel</h3>
+              <p>Sweet & savory melt</p>
             </div>
+          </div>
 
-          </article>
-
-
-
-          <article class="flavor flavor-4">
-
+          <div class="flavor flavor-4">
             <div class="flavor-content">
-
-              <h3>
-                Sea Salt
-              </h3>
-
-              <p>
-                A sophisticated balance of sweet and savory.
-              </p>
-
+              <h3>Berry Fusion</h3>
+              <p>Tangy fruit & chocolate</p>
             </div>
+          </div>
 
-          </article>
-
-
-
-          <article class="flavor flavor-5">
-
+          <div class="flavor flavor-5">
             <div class="flavor-content">
-
-              <h3>
-                Espresso
-              </h3>
-
-              <p>
-                Bold roasted coffee and intense cocoa.
-              </p>
-
+              <h3>Spiced Chai</h3>
+              <p>Warm Indian spice notes</p>
             </div>
+          </div>
 
-          </article>
-
-
-
-          <article class="flavor flavor-6">
-
+          <div class="flavor flavor-6">
             <div class="flavor-content">
-
-              <h3>
-                Salted Caramel
-              </h3>
-
-              <p>
-                Buttery caramel with a delicate salty finish.
-              </p>
-
+              <h3>White Silk</h3>
+              <p>Creamy vanilla sweetness</p>
             </div>
-
-          </article>
+          </div>
 
         </div>
 
@@ -2270,183 +2077,61 @@
 
 
     <!-- =========================================
-         PROCESS
-    ========================================== -->
+        PROCESS
+    ========================================= -->
 
     <section class="process" id="process">
 
       <div class="container process-grid">
 
-
         <div class="process-image">
-
           <img
-            src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?auto=format&fit=crop&w=1000&q=85"
-            alt="Chocolatier creating chocolate"
+            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1000&q=85"
+            alt="Chocolate making process"
           >
-
         </div>
 
 
-        <div>
+        <div class="steps-copy">
 
           <div class="section-heading">
 
             <div class="eyebrow">
-              Our Craft
+              Artisan Process
             </div>
 
             <h2>
-              From Cocoa to Creation.
+              From Bean to Bliss.
             </h2>
-
-            <p>
-              Every piece passes through careful hands before
-              it becomes part of your chocolate experience.
-            </p>
 
           </div>
 
 
           <div class="steps">
 
-
             <div class="step">
-
-              <div class="step-number">
-                01
-              </div>
-
+              <div class="step-number">1</div>
               <div>
-
-                <h3>
-                  Select
-                </h3>
-
-                <p>
-                  We begin with carefully selected cocoa
-                  and quality ingredients.
-                </p>
-
+                <h3>Bean Selection</h3>
+                <p>We source fine cocoa beans known for exceptional aroma and flavor depth.</p>
               </div>
-
             </div>
 
-
-
             <div class="step">
-
-              <div class="step-number">
-                02
-              </div>
-
+              <div class="step-number">2</div>
               <div>
-
-                <h3>
-                  Create
-                </h3>
-
-                <p>
-                  Traditional chocolate-making techniques
-                  meet creative flavor ideas.
-                </p>
-
+                <h3>Roasting & Conching</h3>
+                <p>Beans are roasted to perfection and conched for silky-smooth texture.</p>
               </div>
-
             </div>
 
-
-
             <div class="step">
-
-              <div class="step-number">
-                03
-              </div>
-
+              <div class="step-number">3</div>
               <div>
-
-                <h3>
-                  Temper
-                </h3>
-
-                <p>
-                  Chocolate is carefully tempered for shine,
-                  texture and snap.
-                </p>
-
+                <h3>Hand Tempering</h3>
+                <p>Expert chocolatiers temper the chocolate for that signature glossy shine and snap.</p>
               </div>
-
             </div>
-
-
-
-            <div class="step">
-
-              <div class="step-number">
-                04
-              </div>
-
-              <div>
-
-                <h3>
-                  Fill & Flavor
-                </h3>
-
-                <p>
-                  Fruits, nuts, caramel, ganache and spices
-                  bring each creation to life.
-                </p>
-
-              </div>
-
-            </div>
-
-
-
-            <div class="step">
-
-              <div class="step-number">
-                05
-              </div>
-
-              <div>
-
-                <h3>
-                  Decorate
-                </h3>
-
-                <p>
-                  Each piece receives its final artistic
-                  touches by hand.
-                </p>
-
-              </div>
-
-            </div>
-
-
-
-            <div class="step">
-
-              <div class="step-number">
-                06
-              </div>
-
-              <div>
-
-                <h3>
-                  Share
-                </h3>
-
-                <p>
-                  Beautifully packaged and ready to make
-                  someone's day sweeter.
-                </p>
-
-              </div>
-
-            </div>
-
 
           </div>
 
@@ -2459,43 +2144,29 @@
 
 
     <!-- =========================================
-         GIFTING
-    ========================================== -->
+        GIFT SECTION
+    ========================================= -->
 
-    <section class="gift" id="gifting">
+    <section class="gift">
 
-      <div class="container">
+      <div class="container gift-content">
 
-        <div class="gift-content">
-
-          <div class="eyebrow">
-            Chocolate Gifting
-          </div>
-
-          <h2>
-            Give a Little Happiness.
-          </h2>
-
-          <p>
-            Birthdays, anniversaries, weddings, festivals,
-            corporate events, or simply because. Our elegant
-            chocolate boxes are made to turn thoughtful gestures
-            into unforgettable moments.
-          </p>
-
-          <div class="buttons">
-
-            <a href="#contact" class="btn btn-primary">
-              Create a Gift Box →
-            </a>
-
-            <a href="#contact" class="btn btn-secondary">
-              Corporate Gifting
-            </a>
-
-          </div>
-
+        <div class="eyebrow">
+          Special Occasions
         </div>
+
+        <h2>
+          Gift Boxes Made for Unforgettable Moments.
+        </h2>
+
+        <p>
+          Celebrate birthdays, anniversaries, festivals or corporate milestones
+          with customized luxury gift boxes curated right here in Jamnagar.
+        </p>
+
+        <button class="btn btn-primary add-cart-btn" data-product="Luxury Gift Box">
+          Order Custom Gift Box 🎁
+        </button>
 
       </div>
 
@@ -2504,178 +2175,8 @@
 
 
     <!-- =========================================
-         CUSTOM CHOCOLATES
-    ========================================== -->
-
-    <section class="custom">
-
-      <div class="container">
-
-        <div class="section-heading center">
-
-          <div class="eyebrow">
-            Custom Chocolates
-          </div>
-
-          <h2>
-            Your Occasion. Your Chocolate.
-          </h2>
-
-          <p>
-            Create a chocolate experience designed especially
-            for your event.
-          </p>
-
-        </div>
-
-
-        <div class="custom-grid">
-
-
-          <div class="custom-card">
-
-            <span>💍</span>
-
-            <h3>
-              Weddings
-            </h3>
-
-          </div>
-
-
-          <div class="custom-card">
-
-            <span>🎂</span>
-
-            <h3>
-              Birthdays
-            </h3>
-
-          </div>
-
-
-          <div class="custom-card">
-
-            <span>🏢</span>
-
-            <h3>
-              Corporate Events
-            </h3>
-
-          </div>
-
-
-          <div class="custom-card">
-
-            <span>🎉</span>
-
-            <h3>
-              Celebrations
-            </h3>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================
-         TESTIMONIALS
-    ========================================== -->
-
-    <section class="testimonials">
-
-      <div class="container">
-
-        <div class="section-heading center">
-
-          <div class="eyebrow">
-            Customer Love
-          </div>
-
-          <h2>
-            Loved by Chocolate Lovers.
-          </h2>
-
-        </div>
-
-
-        <div class="testimonial-grid">
-
-
-          <article class="testimonial">
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              “Absolutely beautiful chocolates! Every piece
-              tasted fresh, rich and delicious. The presentation
-              was stunning too.”
-            </p>
-
-            <div class="customer">
-              — Priya M.
-            </div>
-
-          </article>
-
-
-
-          <article class="testimonial">
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              “The perfect gift. The packaging was elegant and
-              the chocolates were even better. Everyone loved them!”
-            </p>
-
-            <div class="customer">
-              — Rohan S.
-            </div>
-
-          </article>
-
-
-
-          <article class="testimonial">
-
-            <div class="stars">
-              ★★★★★
-            </div>
-
-            <p>
-              “We ordered custom chocolates for our celebration
-              and they were a huge hit. Beautiful, delicious and memorable.”
-            </p>
-
-            <div class="customer">
-              — Meera & Arjun
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================
-         LOCATION
-    ========================================== -->
+        LOCATION
+    ========================================= -->
 
     <section class="location" id="location">
 
@@ -2684,16 +2185,15 @@
         <div class="section-heading center">
 
           <div class="eyebrow">
-            Find Us
+            Visit Our Factory & Store
           </div>
 
           <h2>
-            Come Taste the Magic.
+            Come Taste the Magic Near Lakhota Lake.
           </h2>
 
           <p>
-            Visit Cocoa Haven near the beautiful Lakhota Lake
-            in Jamnagar and discover your next favorite chocolate.
+            Drop by for a fresh batch of handcrafted chocolates or witness live truffle making!
           </p>
 
         </div>
@@ -2701,153 +2201,55 @@
 
         <div class="location-grid">
 
-
-          <!-- LOCATION INFORMATION -->
-
           <div class="location-info">
 
-            <div class="eyebrow">
-              Our Location
-            </div>
+            <div class="eyebrow">Cocoa Haven Jamnagar</div>
 
-            <h2>
-              Chocolate by the Lake.
-            </h2>
+            <h2>Find Us Here</h2>
 
             <p>
-              Stop by for handcrafted chocolates, gourmet treats,
-              beautiful gift boxes and a little sweetness during
-              your visit to Lakhota Lake.
+              Situated conveniently near the historic Lakhota Lake, our store welcomes all chocolate enthusiasts.
             </p>
-
 
             <div class="location-details">
 
-
               <div class="location-detail">
-
-                <div class="location-icon">
-                  📍
-                </div>
-
+                <div class="location-icon">📍</div>
                 <div>
-
-                  <h3>
-                    Address
-                  </h3>
-
-                  <p>
-                    Near Lakhota Lake,<br>
-                    Jamnagar, Gujarat, India
-                  </p>
-
+                  <h3>Address</h3>
+                  <p>Near Lakhota Lake, Jamnagar, Gujarat, 361005</p>
                 </div>
-
               </div>
 
-
-
               <div class="location-detail">
-
-                <div class="location-icon">
-                  🕐
-                </div>
-
+                <div class="location-icon">⏰</div>
                 <div>
-
-                  <h3>
-                    Opening Hours
-                  </h3>
-
-                  <p>
-                    Monday – Sunday<br>
-                    10:00 AM – 8:00 PM
-                  </p>
-
+                  <h3>Opening Hours</h3>
+                  <p>Mon - Sun: 10:00 AM – 9:00 PM</p>
                 </div>
-
               </div>
 
-
-
               <div class="location-detail">
-
-                <div class="location-icon">
-                  📞
-                </div>
-
+                <div class="location-icon">📞</div>
                 <div>
-
-                  <h3>
-                    Call Us
-                  </h3>
-
-                  <p>
-                    +91 98765 43210
-                  </p>
-
+                  <h3>Phone</h3>
+                  <p>+91 98765 43210</p>
                 </div>
-
               </div>
-
-
-
-              <div class="location-detail">
-
-                <div class="location-icon">
-                  🚗
-                </div>
-
-                <div>
-
-                  <h3>
-                    Easy to Find
-                  </h3>
-
-                  <p>
-                    Located near the popular Lakhota Lake
-                    landmark in Jamnagar.
-                  </p>
-
-                </div>
-
-              </div>
-
-
-            </div>
-
-
-            <div style="margin-top:32px;">
-
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Lakhota+Lake+Jamnagar+Gujarat"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary"
-              >
-                📍 Get Directions →
-              </a>
 
             </div>
 
           </div>
 
-
-          <!-- GOOGLE MAP -->
 
           <div class="map-container">
-
             <iframe
-              src="https://www.google.com/maps?q=Lakhota%20Lake%2C%20Jamnagar%2C%20Gujarat%2C%20India&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8!2d70.07!3d22.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI4JzEyLjAiTiA3MMKwMDQnMTIuMCJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin"
+              allowfullscreen=""
               loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Cocoa Haven location near Lakhota Lake, Jamnagar"
-            >
-            </iframe>
-
+              title="Cocoa Haven Location Map"
+            ></iframe>
           </div>
-
 
         </div>
 
@@ -2858,8 +2260,8 @@
 
 
     <!-- =========================================
-         FAQ
-    ========================================== -->
+        FAQ
+    ========================================= -->
 
     <section class="faq">
 
@@ -2867,108 +2269,28 @@
 
         <div class="section-heading center">
 
-          <div class="eyebrow">
-            FAQ
-          </div>
+          <div class="eyebrow">Got Questions?</div>
 
-          <h2>
-            Frequently Asked Questions.
-          </h2>
+          <h2>Frequently Asked Questions</h2>
 
         </div>
 
-
         <div class="faq-list">
 
-
           <details>
-
-            <summary>
-              Are your chocolates handmade?
-            </summary>
-
-            <p>
-              Yes. Our specialty chocolates are carefully crafted
-              and finished by our chocolatiers.
-            </p>
-
+            <summary>Do you offer home delivery in Jamnagar?</summary>
+            <p>Yes! We offer quick home delivery across Jamnagar for all orders placed through our website or store.</p>
           </details>
 
-
-
           <details>
-
-            <summary>
-              What types of chocolate do you offer?
-            </summary>
-
-            <p>
-              We offer milk, dark, white and specialty chocolate
-              creations, including gourmet flavor combinations.
-            </p>
-
+            <summary>Can I customize my chocolate gift box?</summary>
+            <p>Absolutely! You can choose your favorite flavor assortment and personalized greeting cards for any occasion.</p>
           </details>
 
-
-
           <details>
-
-            <summary>
-              Can I customize a gift box?
-            </summary>
-
-            <p>
-              Yes. Depending on your order, flavors, quantities,
-              packaging and personalized messages can be customized.
-            </p>
-
+            <summary>Are your chocolates suitable for vegetarians?</summary>
+            <p>Yes, 100% of our chocolates and ingredients are vegetarian-friendly.</p>
           </details>
-
-
-
-          <details>
-
-            <summary>
-              Do you offer corporate gifting?
-            </summary>
-
-            <p>
-              Yes. We create customized chocolate collections
-              for companies, employees, clients and corporate events.
-            </p>
-
-          </details>
-
-
-
-          <details>
-
-            <summary>
-              Where are you located?
-            </summary>
-
-            <p>
-              Cocoa Haven is located near Lakhota Lake in Jamnagar,
-              Gujarat, India.
-            </p>
-
-          </details>
-
-
-
-          <details>
-
-            <summary>
-              What are your opening hours?
-            </summary>
-
-            <p>
-              We are open Monday through Sunday from
-              10:00 AM to 8:00 PM.
-            </p>
-
-          </details>
-
 
         </div>
 
@@ -2979,44 +2301,22 @@
 
 
     <!-- =========================================
-         NEWSLETTER
-    ========================================== -->
+        NEWSLETTER
+    ========================================= -->
 
     <section class="newsletter">
 
       <div class="container">
 
-        <div
-          class="eyebrow"
-          style="justify-content:center;"
-        >
-          Stay in the Sweet Loop
+        <div class="section-heading center" style="margin-bottom: 25px;">
+          <div class="eyebrow" style="color: var(--brown-900);">Join Club Cocoa</div>
+          <h2>Get Sweet Treats & Offers</h2>
+          <p>Subscribe for seasonal flavor updates and exclusive discount codes.</p>
         </div>
 
-        <h2>
-          Get a Little Sweeter.
-        </h2>
-
-        <p>
-          New flavors, seasonal collections and chocolate inspiration.
-        </p>
-
-
-        <form
-          class="newsletter-form"
-          id="newsletterForm"
-        >
-
-          <input
-            type="email"
-            placeholder="Your email address"
-            required
-          >
-
-          <button type="submit">
-            Subscribe
-          </button>
-
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email address..." required>
+          <button type="submit">Subscribe</button>
         </form>
 
       </div>
@@ -3026,149 +2326,222 @@
 
 
     <!-- =========================================
-         CONTACT
-    ========================================== -->
+        CONTACT
+    ========================================= -->
 
     <section class="contact" id="contact">
 
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading center">
 
-          <div class="eyebrow">
-            Contact Us
-          </div>
+          <div class="eyebrow">Get In Touch</div>
 
-          <h2>
-            Let's Make Something Delicious.
-          </h2>
-
-          <p>
-            Contact us for chocolate orders, custom gifts,
-            corporate gifting and special events.
-          </p>
+          <h2>We'd Love to Hear From You</h2>
 
         </div>
 
 
         <div class="contact-grid">
 
-
           <div class="contact-info">
 
-
             <div class="contact-item">
-
-              <div class="contact-icon">
-                📍
-              </div>
-
+              <div class="contact-icon">💬</div>
               <div>
-
-                <h3>
-                  Visit Us
-                </h3>
-
-                <p>
-                  Near Lakhota Lake,<br>
-                  Jamnagar, Gujarat, India
-                </p>
-
+                <h3>Chat With Us</h3>
+                <p>Have questions about custom orders? Reach out anytime.</p>
               </div>
-
             </div>
 
-
-
             <div class="contact-item">
-
-              <div class="contact-icon">
-                📞
-              </div>
-
+              <div class="contact-icon">🎁</div>
               <div>
-
-                <h3>
-                  Call Us
-                </h3>
-
-                <p>
-                  +91 98765 43210
-                </p>
-
+                <h3>Corporate Gifting</h3>
+                <p>Partner with us for festive gifting and corporate bulk orders.</p>
               </div>
-
             </div>
-
-
-
-            <div class="contact-item">
-
-              <div class="contact-icon">
-                ✉️
-              </div>
-
-              <div>
-
-                <h3>
-                  Email
-                </h3>
-
-                <p>
-                  hello@cocoahaven.com
-                </p>
-
-              </div>
-
-            </div>
-
-
-
-            <div class="contact-item">
-
-              <div class="contact-icon">
-                🕐
-              </div>
-
-              <div>
-
-                <h3>
-                  Opening Hours
-                </h3>
-
-                <p>
-                  Monday – Sunday<br>
-                  10:00 AM – 8:00 PM
-                </p>
-
-              </div>
-
-            </div>
-
 
           </div>
 
 
-
-          <form
-            class="contact-form"
-            id="contactForm"
-          >
-
+          <form class="contact-form" id="contactForm">
 
             <div class="form-group">
-
-              <label for="name">
-                Your Name
-              </label>
-
-              <input
-                id="name"
-                type="text"
-                placeholder="Your name"
-                required
-              >
-
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="Enter your name">
             </div>
 
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="Enter your email">
+            </div>
 
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" required placeholder="Tell us what you're looking for..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message 🍫</button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================
+        FOOTER
+    ========================================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <a href="#home" class="logo">
+            <span class="logo-mark">🍫</span>
+            Cocoa Haven
+          </a>
+          <p class="footer-about">
+            Handcrafted chocolate factory bringing rich cocoa joy and unforgettable gourmet flavors near Lakhota Lake, Jamnagar.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#chocolates">Chocolates</a>
+            <a href="#flavors">Flavors</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Discover</h4>
+          <div class="footer-links">
+            <a href="#process">Our Process</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+            <a href="#chocolates">Gift Boxes</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Jamnagar Store</h4>
+          <p class="footer-about">
+            Near Lakhota Lake, Jamnagar, Gujarat 361005<br>
+            Phone: +91 98765 43210
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cocoa Haven Handcrafted Chocolate Factory. All rights reserved.</p>
+        <p>Made with ❤️ in Jamnagar</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =========================================
+        TOAST NOTIFICATION CONTAINER
+    ========================================= -->
+
+  <div class="toast" id="toastNotification">
+    Added to your chocolate box! 🍫
+  </div>
+
+
+
+  <!-- =========================================
+        JAVASCRIPT
+  ========================================= -->
+
+  <script>
+
+    // Mobile Navigation Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Close mobile menu when clicking any nav link
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    }
+
+    // Toast Notification System
+    const toast = document.getElementById('toastNotification');
+    let toastTimeout;
+
+    function showToast(message) {
+      if (!toast) return;
+      toast.textContent = message;
+      toast.classList.add('show');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    // Handle all "Add", "Shop Now", and cart button clicks
+    const addButtons = document.querySelectorAll('.add-cart-btn, .nav-button, .btn-primary');
+    
+    addButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const productName = btn.getAttribute('data-product');
+        if (productName) {
+          showToast(`Added ${productName} to your chocolate box! 🍫`);
+        } else if (btn.classList.contains('nav-button')) {
+          showToast(`Welcome to the Cocoa Haven Shop! 🍫`);
+        } else {
+          showToast(`Added to your chocolate box! 🍫`);
+        }
+      });
+    });
+
+    // Handle Newsletter Submission
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        showToast(`Thank you for subscribing to Club Cocoa! 🎉`);
+        newsletterForm.reset();
+      });
+    }
+
+    // Handle Contact Form Submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        showToast(`Message sent successfully! We'll connect soon. 💌`);
+        contactForm.reset();
+      });
+    }
+  </script>
+
+</body>
+</html>
